@@ -34,8 +34,8 @@ const HomeAboutStory = () => {
         {/* --- HOME SECTION (Top Third) --- */}
         <div id="home" className="absolute top-0 w-full h-[33.33%] pointer-events-auto flex flex-col items-center pt-[10%] lg:pt-[8%]">
           {/* Main Logo */}
-          <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center">
-            <img src={streetCredLogo} alt="Street Cred" className="w-[300px] sm:w-[450px] lg:w-[650px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
+          <motion.div initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center mt-[5%] lg:mt-0">
+            <img src={streetCredLogo} alt="Street Cred" className="w-[350px] sm:w-[450px] lg:w-[650px] drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
           </motion.div>
 
           {/* Down Arrows */}
@@ -54,7 +54,7 @@ const HomeAboutStory = () => {
           </motion.p>
           
           {/* Subtext Mobile */}
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.8 }} className="lg:hidden mt-6 text-black font-serif font-bold text-[22px] sm:text-[28px] tracking-wide text-center px-4 leading-tight drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]">
+          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.8 }} className="lg:hidden mt-6 w-full text-center pr-[25%] text-black font-serif font-bold text-[22px] sm:text-[28px] tracking-wide leading-tight drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]">
             Build Your Cred<br/>in the Digital<br/>World!
           </motion.p>
 
@@ -71,10 +71,12 @@ const HomeAboutStory = () => {
           <motion.img initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} src={aboutName} alt="ABOUT" className="absolute top-[4%] left-[55%] -translate-x-1/2 w-[250px] lg:w-[350px] drop-shadow-2xl z-30" />
 
           {/* Blue Paint Wash - Left side behind text */}
-          <img src={paintWash} alt="Paint Wash" className="absolute top-[18%] lg:top-[-7%] left-[2%] lg:left-[-6%] w-[90%] lg:w-[75%] opacity-90 z-10 mix-blend-multiply" />
+          <img src={paintWash} alt="Paint Wash" className="absolute top-[-5%] lg:top-[-7%] left-[-10%] lg:left-[-6%] w-[100%] lg:w-[75%] opacity-90 z-10 mix-blend-multiply" />
+          <img src={paintWash} alt="Paint Wash" className="absolute top-[12%] lg:top-[-7%] left-[-10%] lg:left-[-6%] w-[100%] lg:w-[75%] opacity-90 z-10 mix-blend-multiply" />
+          <img src={paintWash} alt="Paint Wash" className="absolute top-[28%] lg:top-[-7%] left-[-10%] lg:left-[-6%] w-[100%] lg:w-[75%] opacity-90 z-10 mix-blend-multiply" />
 
           {/* Text Content - Over the blue wash */}
-          <div className="absolute top-[22%] lg:top-[32%] left-[5%] lg:left-[10%] w-[85%] lg:w-[35%] z-20 font-neuton text-black text-[16px] md:text-[20px] lg:text-[18px] text-center leading-snug drop-shadow-sm">
+          <div className="absolute top-[18%] lg:top-[32%] left-[10%] lg:left-[10%] w-[52%] lg:w-[35%] z-20 font-neuton text-black text-[13px] md:text-[20px] lg:text-[18px] text-center leading-snug drop-shadow-sm">
             <p className="mb-2">
               Welcome to Street Cred (SCRD), where crypto meets street culture. We're building a platform that blends decentralized finance with the bold energy of urban life. Our token is designed for the street-smart generation, embracing authenticity, individuality, and the modern digital landscape. Whether you're earning, trading, or staking, Street Cred empowers you to own your place in the evolving world of crypto.
             </p>
@@ -84,19 +86,19 @@ const HomeAboutStory = () => {
           </div>
 
           {/* JOIN NOW - Top Right (the pink splash paint mark) */}
-          <motion.img initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.4, type: 'spring', stiffness: 200 }} src={joinNow} alt="Join Now" className="absolute top-[10%] lg:top-[20%] right-[5%] lg:right-[20%] w-[140px] lg:w-[250px] drop-shadow-[0_0_15px_rgba(255,0,255,0.6)] z-20" />
+          <motion.img initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ delay: 0.4, type: 'spring', stiffness: 200 }} src={joinNow} alt="Join Now" className="absolute top-[75%] lg:top-[20%] right-[5%] lg:right-[20%] w-[100px] lg:w-[250px] drop-shadow-[0_0_15px_rgba(255,0,255,0.6)] z-20" />
 
           {/* Guy Sitting - Left Side Fully */}
-          <motion.img initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.6, duration: 0.8 }} src={person} alt="Person sitting" className="absolute bottom-[5%] lg:bottom-[-1%] left-0 w-[200px] lg:w-[280px] drop-shadow-2xl z-20" />
+          <motion.img initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.6, duration: 0.8 }} src={person} alt="Person sitting" className="absolute bottom-[-2%] lg:bottom-[-1%] left-0 w-[160px] lg:w-[280px] drop-shadow-2xl z-20" />
 
           {/* Paint Bucket Blue Border - Full Width at Bottom */}
-          <motion.img initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.8, duration: 0.8 }} src={paintBucket} alt="Paint Bucket Border" className="absolute bottom-[-2%] lg:bottom-[-8%] left-0 w-full h-auto drop-shadow-xl z-30" />
+          <motion.img initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.8, duration: 0.8 }} src={paintBucket} alt="Paint Bucket Border" className="absolute bottom-[-5%] lg:bottom-[-8%] left-0 w-[150%] sm:w-[120%] lg:w-full max-w-none h-auto drop-shadow-xl z-30" />
 
           {/* BUY NOW Button with Arrows - Below the join now splash */}
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 1, duration: 0.8 }} className="absolute bottom-[10%] lg:bottom-[15%] right-[2%] lg:right-[16%] flex items-center justify-center gap-2 lg:gap-4 z-40 cursor-pointer hover:scale-105 transition-transform">
-            <img src={arrows} alt="Left Arrow" className="w-6 lg:w-12 -rotate-90 drop-shadow-md" />
-            <img src={buyNowBtn} alt="Buy Now" className="w-[160px] lg:w-[280px] drop-shadow-xl" />
-            <img src={arrows} alt="Right Arrow" className="w-6 lg:w-12 rotate-90 drop-shadow-md" />
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 1, duration: 0.8 }} className="absolute bottom-[6%] lg:bottom-[15%] right-[3%] lg:right-[16%] flex items-center justify-center gap-2 lg:gap-4 z-40 cursor-pointer hover:scale-105 transition-transform">
+            <img src={arrows} alt="Left Arrow" className="w-5 lg:w-12 -rotate-90 drop-shadow-md" />
+            <img src={buyNowBtn} alt="Buy Now" className="w-[120px] lg:w-[280px] drop-shadow-xl" />
+            <img src={arrows} alt="Right Arrow" className="w-5 lg:w-12 rotate-90 drop-shadow-md" />
           </motion.div>
         </div>
 
@@ -110,11 +112,11 @@ const HomeAboutStory = () => {
             transition={{ duration: 0.8 }}
             src={storyName} 
             alt="Story Title" 
-            className="absolute top-[5%] lg:top-[7%] right-[10%] lg:right-[28%] w-[250px] lg:w-[350px] drop-shadow-2xl z-30" 
+            className="absolute top-[5%] lg:top-[7%] right-[20%] lg:right-[28%] w-[250px] lg:w-[350px] drop-shadow-2xl z-30" 
           />
 
           {/* Story Text */}
-          <div className="absolute top-[20%] lg:top-[18%] right-[5%] lg:right-[15%] w-[90%] lg:w-[45%] z-20 font-neuton text-white text-[14px] md:text-[16px] lg:text-[17px] text-center leading-snug drop-shadow-md bg-black/30 lg:bg-transparent p-4 rounded-xl">
+          <div className="absolute top-[20%] lg:top-[18%] right-[15%] lg:right-[15%] w-[80%] lg:w-[45%] z-20 font-neuton text-white text-[14px] md:text-[16px] lg:text-[17px] text-center leading-snug drop-shadow-md bg-black/30 lg:bg-transparent p-4 rounded-xl">
             <p>
               Born from the streets and inspired by urban culture, Street Cred (SCRD) was created to bridge the gap between crypto and street-smart culture. What started as a vision to empower individuals with digital credibility has evolved into a dynamic platform where authenticity, creativity, and community thrive. Our journey is rooted in the vibrant energy of street art, fashion, and culture, paving the way for a new generation of decentralized finance.
             </p>
@@ -139,7 +141,7 @@ const HomeAboutStory = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             src={railing} 
             alt="Railing" 
-            className="absolute bottom-0 left-0 w-full h-auto drop-shadow-2xl z-40" 
+            className="absolute bottom-0 left-0 w-[200%] sm:w-[150%] lg:w-full max-w-none h-auto drop-shadow-2xl z-40" 
           />
         </div>
 

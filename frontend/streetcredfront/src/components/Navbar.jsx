@@ -49,7 +49,7 @@ const Navbar = () => {
 
       {/* Mobile Drawer Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-[100] bg-black bg-opacity-50 flex justify-end">
+        <div className="fixed inset-0 z-[100] bg-black/30 backdrop-blur-md flex justify-end">
           <div className="w-[70%] max-w-[300px] h-full bg-[#fdf5e6] shadow-2xl relative flex flex-col pt-16 px-6">
             <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4 text-3xl text-pink-600 focus:outline-none">
               <FaTimes />

@@ -47,12 +47,12 @@ const TokenomicsAndRoadmap = () => {
             whileInView={{ opacity: 1, scale: 1 }} 
             viewport={{ once: true }} 
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="absolute top-[19%] lg:top-[19%] left-1/2 -translate-x-1/2 w-[240px] lg:w-[300px] z-20 flex items-center justify-center"
+            className="absolute top-[19%] sm:top-[17%] lg:top-[19%] left-1/2 -translate-x-1/2 w-[290px] sm:w-[230px] lg:w-[300px] z-20 flex items-center justify-center"
           >
             <img src={tokenomicsBoard} alt="Tokenomics Board" className="w-full h-auto drop-shadow-2xl" />
             
             {/* Overlay Text on Board */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 lg:gap-6 font-serif text-white font-bold text-[14px] lg:text-[18px] tracking-wider pt-4 lg:pt-8 drop-shadow-md">
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 lg:gap-6 font-serif text-white font-bold text-[18px] lg:text-[18px] sm:text-[14px] tracking-wider pt-4 lg:pt-8 drop-shadow-md">
               <p>Sell Tax - 0%</p>
               <p>Buy Tax - 0%</p>
               <p>Liquidity - Burned</p>
@@ -83,7 +83,7 @@ const TokenomicsAndRoadmap = () => {
             transition={{ duration: 0.8 }}
             src={roadmapName} 
             alt="Roadmap" 
-            className="absolute top-[8%] lg:top-[12%] left-[5%] lg:left-[10%] w-[200px] lg:w-[350px] drop-shadow-2xl z-30" 
+            className="absolute top-[40%] lg:top-[12%] left-[5%] lg:left-[10%] w-[220px] lg:w-[350px] drop-shadow-2xl z-30" 
           />
 
           {/* Roadmap Board & Text */}
@@ -113,7 +113,7 @@ const TokenomicsAndRoadmap = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             src={person7} 
             alt="Person looking away" 
-            className="absolute bottom-[40%] lg:bottom-[-2%] left-[10%] lg:left-[20%] w-[150px] lg:w-[320px] drop-shadow-2xl z-10" 
+            className="absolute bottom-[20%] lg:bottom-[-2%] left-[20%] lg:left-[20%] w-[150px] lg:w-[320px] drop-shadow-2xl z-10" 
           />
 
           {/* Lamp */}
@@ -124,7 +124,7 @@ const TokenomicsAndRoadmap = () => {
             transition={{ delay: 0.7, duration: 0.8 }}
             src={lamp} 
             alt="Lamp" 
-            className="absolute bottom-[-1%] lg:bottom-[-2%] right-[70%] lg:right-[5%] w-[50px] lg:w-[100px] drop-shadow-xl z-20" 
+            className="absolute bottom-[-1%] lg:bottom-[-2%] right-[85%] lg:right-[5%] w-[50px] lg:w-[100px] drop-shadow-xl z-20" 
           />
 
           {/* Railing - Bottom Full Width */}
@@ -135,7 +135,7 @@ const TokenomicsAndRoadmap = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             src={railing} 
             alt="Railing" 
-            className="absolute bottom-[-1%] left-0 w-[100%] lg:w-full h-[12%] lg:h-auto drop-shadow-2xl z-40" 
+            className="absolute bottom-[-1%] left-0 w-[200%] sm:w-[120%] lg:w-full max-w-none h-auto drop-shadow-2xl z-40" 
           />
         </div>
 
