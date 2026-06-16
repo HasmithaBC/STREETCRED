@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Irish+Grover&family=Neuton:ital,wght@0,400;0,700;0,800;1,400&family=Rubik+Wet+Paint&family=Bangers&display=swap');
+
+@theme {
+  --color-primary: #aa3bff;
+  --color-bg-dark: #16171d;
+  --font-rubik: 'Rubik Wet Paint', cursive;
+  --font-neuton: 'Neuton', serif;
+  --font-irish: 'Irish Grover', cursive;
+  --font-bakbak: 'Bakbak One', cursive;
+  --font-bangers: 'Bangers', cursive;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes rainFall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(3000px);
+  }
+}
